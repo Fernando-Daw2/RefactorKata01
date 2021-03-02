@@ -7,6 +7,7 @@ public class AlarmTest {
     @Test
     public void foo() {
         Alarm alarm = new Alarm();
-        assertFalse(alarm.isAlarmOn());
+        Sensor sensor = new Sensor();
+        assertFalse(alarm.check(sensor));
     }
 }
